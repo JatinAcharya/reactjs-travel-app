@@ -2,7 +2,6 @@ import React from "react";
 import MarkerIcon from "../assets/marker.png";
 
 const Entry = (props) => {
-  console.log(props);
   return (
     <>
       <article className="entry-wrapper">
