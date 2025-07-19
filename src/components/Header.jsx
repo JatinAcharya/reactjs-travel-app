@@ -1,10 +1,11 @@
 import React from "react";
+import GlobeIcon from "../assets/globe.png";
 
 const Header = () => {
   return (
     <>
       <header className="custom-header">
-        <img src="/src/assets/globe.png" alt="Globe icon" />
+        <img src={GlobeIcon} alt="Globe icon" />
         <h2>My Travel Journal</h2>
       </header>
     </>

@@ -1,32 +1,24 @@
 import React from "react";
+import MarkerIcon from "../assets/marker.png";
 
-const Entry = () => {
+const Entry = (props) => {
+  console.log(props);
   return (
     <>
       <article className="entry-wrapper">
-        <img
-          src="https://scrimba.com/links/travel-journal-japan-image-url"
-          alt="Location image"
-        />
+        <img src={props.img.src} alt={props.img.alt} />
         <div>
           <div className="country-wrapper">
-            <img src="/src/assets/marker.png" alt="Marker icon" />
-            <span className="country-name">JAPAN</span>
-            <a
-              target="_blank"
-              href="https://www.google.com/maps/place/Mount+Fuji/@35.3606421,138.7170637,15z/data=!3m1!4b1!4m6!3m5!1s0x6019629a42fdc899:0xa6a1fcc916f3a4df!8m2!3d35.3606255!4d138.7273634!16zL20vMGNrczA?entry=ttu"
-            >
+            <img src={MarkerIcon} alt="Marker icon" />
+            <span className="country-name">{props.country}</span>
+            <a target="_blank" href={props.googleMapsLink}>
               View on Google Maps
             </a>
           </div>
           <div className="location-wrapper">
-            <h2>Mount Fuji</h2>
-            <h4>12 Jan, 2021 - 24 Jan, 2021</h4>
-            <p>
-              Mount Fuji is the tallest mountain in Japan, standing at 3,776
-              meters (12,380 feet). Mount Fuji is the single most popular
-              tourist site in Japan, for both Japanese and foreign tourists.
-            </p>
+            <h2>{props.title}</h2>
+            <h4>{props.dates}</h4>
+            <p>{props.text}</p>
           </div>
         </div>
       </article>

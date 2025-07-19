@@ -45,6 +45,7 @@
 .country-name{
   font-size: 1rem;
   letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
 .country-wrapper > img{
