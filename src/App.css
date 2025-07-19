@@ -33,7 +33,7 @@
 .entry-wrapper > img{
   border-radius: 5px;
   width: 17rem;
-  /* max-height: 11rem; */
+  height: 12rem;
 }
 
 .country-wrapper {
